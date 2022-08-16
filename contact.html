@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<!-- Universal Transformation Format 8 bit - is tha standard character set for the WWW -->
+  <meta charset="utf-8">
+  <title>Curriculum Meron Bogale</title>
+	
+
+	<link rel="stylesheet" href="cv.css">
+	<link rel="stylesheet" href="forms.css">
+	
+	   <script >
+	function validate()
+	{
+		
+		var Name = document.forms.frmContact.txtName.value;		
+		var Email = document.forms.frmContact.txtEmail.value;
+		var Comment = document.forms.frmContact.txtComment.value;
+		
+		
+		if (Name.length < 1)
+		{		
+			alert("Please tell us your name");
+			document.forms.frmContact.txtName.focus;
+			return false;
+					
+		}
+		
+		if (Email.length < 6)
+		{		
+			alert("Please enter your email address");
+			document.forms.frmContact.txtEmail.focus;
+			return false;
+					
+		}
+		
+		if (Comment.length < 1)
+		{		
+			alert("Please enter your comment or question");
+			document.forms.frmContact.txtComment.focus;
+			return false;
+					
+		}
+		return true;
+	}
+</script>
+   	
+ </head>
+
+ <body>
+
+  <div id="logo">
+	
+ <img src="images/cvlogo.png" width="200" height="200" alt=""/> </div>
+ 
+ 
+	
+	<div id="nav">
+		<ul>
+		  <li><a href="index.html">Home</a></li>
+		  <li><a href="Education.html">Education</a></li>
+		  <li><a href="Employment.html">Employment</a></li>
+		  <li><a href="contact.html">Contact</a></li>
+	  </ul>
+	</div>
+	 
+	 <div id ="main"> 
+		 
+	   <h1>Contact Us</h1>
+	   <p>please contact me if you have aney quations by email<a href="bogalemerob@gmail.com">-bogalemerob@gmail.com</a> </p>
+	   <p></p>
+		 
+		 <hr style="border-style:dashed; border-width: 6px; background-color:#69c; color:#ff0; width:85%; border-top: 0px;"/>
+		 <p>&nbsp;</p>
+		 <form name="frmContact" method="post" action="mailto:bogalemeron@gmail.com" onSubmit="return validate()"></form>
+				         
+		 
+		<label>
+    	<span>Name: </span>
+    		<input name="txtName" type="text" class="input_text" id="txtName" value="" />
+		</label>
+
+    	<label>
+    	<span>Email address: </span>
+    		<input name="txtEmail" type="text" class="input_text" id="txtEmail" value="" />
+    	</label>
+		
+		<label>
+    	<span>Comment: </span>
+    		<textarea name="txtComment" cols="50" rows="10" class="area_text" id="txtComment"></textarea>
+		</label>
+    <label>	
+      <span>	
+	 		<input name="Submit" type="submit" class="submit" id="Submit" value="Send" />
+      </span>
+    </label>
+ 	
+   	
+    <p>&nbsp;</p> 
+    <p>&nbsp;</p>
+		<div style="margin-left:auto;margin-right:auto;width:80%">
+		  <p>&nbsp;</p>
+  	  
+  	  <p>&nbsp;</p>
+		 
+		 				
+	<p class="text-right"><hr style="border-style:dashed; border-width: 6px; background-color:#69c; color:#ff0; width:85%; border-top: 0px;"/></p>			
+ </div>
+	
+	</div>
+	<div id ="footer">
+		
+		<div id ="footer-left"><img src="images/Facebook.png" width="38" height="38" alt="jon me at facebook"  title=" see me on facebook"/>
+				
+				
+	  <img src="images/Twitter.png" width="38" height="38" alt="contact me at twitter"  title="see me at twitter"/> <img src="images/Youtube.png" width="38" height="38" alt="subscribe me at you tube"  title="see my youtube channel"/></div>
+		
+		<div id ="footer-right">
+				
+			<p>&copy;Meron Bogale 2019</p>
+		</div>	
+				
+     </div>
+
+   </body>
+	
+</html>
